@@ -280,7 +280,7 @@ h4 {
 /* Tablet */
 @media (max-width: 768px) {
     .flip {
-        width: 300px;
+        width: 320px;
     }
 
     .flip > .front,
@@ -290,7 +290,7 @@ h4 {
         width: inherit;
         background-size: cover !important;
         background-position: center !important;
-        height: 300px;
+        height: 400px;
         padding: 1em 2em;
         background: #313131;
         border-radius: 10px;
@@ -347,29 +347,5 @@ h4 {
 
     .sub-menu-overlay {
         width: 90vw;
-    }
-}
-
-@media (max-width: 320px) {
-    .flip {
-        width: 150px;
-    }
-
-    .sub-menu {
-        top: 2px;
-    }
-
-    .sub-menu-icon {
-        width: 5px;
-
-        height: 5px;
-    }
-
-    .menu-bar {
-        height: 0.5px;
-    }
-
-    .sub-menu-overlay {
-        width: 100vw;
     }
 }
