@@ -240,7 +240,7 @@ h4 {
     border-bottom: 3px solid #fff;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
     .flip {
         width: 340px;
     }
@@ -252,7 +252,7 @@ h4 {
         width: inherit;
         background-size: cover !important;
         background-position: center !important;
-        height: 450px;
+        height: 350px;
         padding: 1em 2em;
         background: #313131;
         border-radius: 10px;
@@ -326,7 +326,7 @@ h4 {
         width: inherit;
         background-size: cover !important;
         background-position: center !important;
-        height: 450px;
+        height: 430px;
         padding: 1em 2em;
         background: #313131;
         border-radius: 10px;
