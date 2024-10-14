@@ -118,7 +118,7 @@ h4 {
     height: 43px;
     width: 43px;
     margin-left: 0;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .sub-menu-link {
@@ -252,7 +252,7 @@ h4 {
         width: inherit;
         background-size: cover !important;
         background-position: center !important;
-        height: 350px;
+        height: 300px;
         padding: 1em 2em;
         background: #313131;
         border-radius: 10px;
@@ -326,7 +326,7 @@ h4 {
         width: inherit;
         background-size: cover !important;
         background-position: center !important;
-        height: 350px;
+        height: 380px;
         padding: 1em 2em;
         background: #313131;
         border-radius: 10px;
@@ -352,9 +352,22 @@ h4 {
 
 @media (max-width: 320px) {
     .flip {
-        width: 150px;
+        width: 200px;
     }
-
+    
+.flip > .front,
+    .flip > .back {
+        display: block;
+        color: white;
+        width: inherit;
+        background-size: cover !important;
+        background-position: center !important;
+        height: 350px;
+        padding: 1em 2em;
+        background: #313131;
+        border-radius: 10px;
+    }
+    
     .sub-menu {
         top: 2px;
     }
