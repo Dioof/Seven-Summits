@@ -241,7 +241,7 @@ h4 {
     border-bottom: 3px solid #fff;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1300px) {
     .flip {
         width: 340px;
     }
