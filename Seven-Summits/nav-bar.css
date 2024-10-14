@@ -401,6 +401,11 @@ a {
         width: 180px;
         height: 45px;
     }
+
+    .btn-ssd {
+        width: 180px;
+        height: 45px;
+    }
 }
 
 /* Media Query untuk Mobile */
