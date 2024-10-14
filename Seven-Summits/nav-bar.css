@@ -137,8 +137,9 @@ a {
     width: 100%;
 }
 
-.btn-ssi {
-    width: 180px;
+.btn-ssd {
+    margin-right:;
+    width: 160px;
     height: 40px;
     color: #fff;
     border-radius: 5px;
@@ -157,7 +158,7 @@ a {
     outline: none;
 }
 
-.btn-ssi {
+.btn-ssd {
     background: linear-gradient(
         0deg,
         rgba(255, 151, 0, 1) 0%,
@@ -167,15 +168,15 @@ a {
     padding: 0;
     border: none;
 }
-.btn-ssi span {
+.btn-ssd span {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
     text-align: center;
 }
-.btn-ssi:before,
-.btn-ssi:after {
+.btn-ssd:before,
+.btn-ssd:after {
     position: absolute;
     content: "";
     right: 0;
@@ -188,26 +189,26 @@ a {
         4px 4px 5px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
-.btn-ssi:before {
+.btn-ssd:before {
     height: 0%;
     width: 2px;
 }
-.btn-ssi:after {
+.btn-ssd:after {
     width: 0%;
     height: 2px;
 }
-.btn-ssi:hover {
+.btn-ssd:hover {
     color: rgba(251, 75, 2, 1);
     background: transparent;
 }
-.btn-ssi:hover:before {
+.btn-ssd:hover:before {
     height: 100%;
 }
-.btn-ssi:hover:after {
+.btn-ssd:hover:after {
     width: 100%;
 }
-.btn-ssi span:before,
-.btn-ssi span:after {
+.btn-ssd span:before,
+.btn-ssd span:after {
     position: absolute;
     content: "";
     left: 0;
@@ -220,20 +221,21 @@ a {
         4px 4px 5px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
-.btn-ssi span:before {
+.btn-ssd span:before {
     width: 2px;
     height: 0%;
 }
-.btn-ssi span:after {
+.btn-ssd span:after {
     height: 2px;
     width: 0%;
 }
-.btn-ssi span:hover:before {
+.btn-ssd span:hover:before {
     height: 100%;
 }
-.btn-ssi span:hover:after {
+.btn-ssd span:hover:after {
     width: 100%;
 }
+
 
 .cover {
     width: 100vw;
