@@ -139,8 +139,8 @@ a {
 
 .btn-ssi {
     margin-right:;
-    width: 160px;
-    height: 40px;
+    width: 180px;
+    height: 50px;
     color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
@@ -382,17 +382,17 @@ a {
 
     .btn-ssd {
         width: 200px;
-        height: 50px;
+        height: 40px;
     }
 
     .btn-ssi {
         width: 200px;
-        height: 50px;
+        height: 40px;
     }
 }
 
 /* tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
     .konten {
         width: 70%;
         height: 70%;
@@ -400,12 +400,12 @@ a {
 
     .btn-ssd {
         width: 180px;
-        height: 45px;
+        height: 30px;
     }
 
-    .btn-ssd {
+    .btn-ssi {
         width: 180px;
-        height: 45px;
+        height: 30px;
     }
 }
 
