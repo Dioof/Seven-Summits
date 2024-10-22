@@ -243,7 +243,7 @@ h4 {
 
 @media (max-width: 1500px) {
     .flip {
-        width: 340px;
+        width: 350px;
     }
 
     .flip > .front,
@@ -253,7 +253,7 @@ h4 {
         width: inherit;
         background-size: cover !important;
         background-position: center !important;
-        height: 380px;
+        height: 450px;
         padding: 1em 2em;
         background: #313131;
         border-radius: 10px;
