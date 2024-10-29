@@ -1,0 +1,193 @@
+*{
+    scroll-behavior: smooth;
+    scroll-padding: 70px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.main{
+    color:rgb(100, 100, 100);
+    font-size: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(44, 137, 236);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+section {
+    background: #f7f7f7;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #f1f1f1;
+}
+
+iframe {
+    object-fit: cover;
+}
+
+.gambar {
+    float: right;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.map {
+    object-fit: cover;
+    height: 550px;
+    margin-top: 20px;
+}
+
+.vlog {
+    margin-top: 50px;
+}
+
+.rute {
+    margin-top: 50px;
+}
+
+.peta {
+   margin-top: 40px;
+  
+}
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .main {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        width: 90%;
+        margin: 5px;
+    }
+
+    .map {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+    }
+
+    .vlog {
+        margin-top: 30px;
+    }
+
+    .rute {
+        margin-top: 80px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .main {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .gambar {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .map {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+    }
+
+    .vlog {
+        margin-top: 30px;
+    }
+
+    .rute {
+        margin-top: 50px;
+    }
+}
+
