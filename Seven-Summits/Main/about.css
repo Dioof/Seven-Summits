@@ -1,0 +1,369 @@
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h3{
+  margin-top: -50px;
+  font-size: 34px;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 20px;
+  display: flex;
+  margin-top: 10px;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+
+}
+
+a{
+text-decoration: none;
+color: #fff;
+}
+
+p{
+  font-size: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.box-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: space-around;
+  padding: 35px 15px;
+  width: 100%;
+  gap: 30px;
+}
+
+@media screen and (min-width:1024px) {
+  
+}
+
+.box-item {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  width: 415px;
+  margin-bottom: 35px;
+  max-width: 100%;
+}
+
+.flip-box {
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  height: 500px;
+}
+
+.flip-box-front,
+.flip-box-back {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  min-height: 475px;
+  -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-front {
+  -ms-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-back {
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-box .inner {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 60px;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+  
+  transform: translateY(-50%) translateZ(60px) scale(.94);
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
+  -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+  top: 50%;
+}
+
+/* ... existing code ... */
+
+/* Mobile Styles (default) */
+@media screen and (min-width: 480px) {
+h2 {
+  font-size: 28px; /* Ukuran font untuk mobile */
+}
+
+.flip-box-header {
+  font-size: 28px; /* Ukuran font untuk header di mobile */
+}
+
+.flip-box p {
+  font-size: 18px; /* Ukuran font untuk paragraf di mobile */
+}
+
+.box-container {
+  padding: 20px 10px; /* Padding untuk kontainer di mobile */
+}
+
+.flip-box-button {
+  font-size: 18px; /* Ukuran font untuk tombol di mobile */
+  padding: 10px 15px; /* Padding untuk tombol di mobile */
+}
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 32px; /* Ukuran font untuk tablet */
+  }
+
+  .flip-box-header {
+    font-size: 32px; /* Ukuran font untuk header di tablet */
+  }
+
+  .flip-box p {
+    font-size: 19px; /* Ukuran font untuk paragraf di tablet */
+  }
+
+  .box-container {
+    padding: 30px 15px; /* Padding untuk kontainer di tablet */
+  }
+
+  .flip-box-button {
+    font-size: 19px; /* Ukuran font untuk tombol di tablet */
+    padding: 12px 18px; /* Padding untuk tombol di tablet */
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+  .flip-box-front,
+.flip-box-back {
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  min-height: 520px;
+  width: 400px;
+  -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+  h2 {
+    font-size: 34px; /* Ukuran font untuk desktop */
+  }
+
+  .flip-box-header {
+    font-size: 34px; /* Ukuran font untuk header di desktop */
+  }
+
+  .flip-box p {
+    font-size: 20px; /* Ukuran font untuk paragraf di desktop */
+  }
+
+  .box-container {
+    padding: 35px 15px; /* Padding untuk kontainer di desktop */
+  }
+
+  .flip-box-button {
+    font-size: 20px; /* Ukuran font untuk tombol di desktop */
+    padding: 15px 20px; /* Padding untuk tombol di desktop */
+  }
+  .box-container {
+    flex-direction: row
+  }
+}
+
+/* ... existing code ... */
+.cover {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+/* ------------- */
+.sub-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  height: 46px;
+  width: 46px;
+}
+
+.sub-menu-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2002;
+  background: #111;
+}
+
+.sub-menu-icon {
+  position: fixed;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    left: 32px;
+    top: 30px;
+}
+
+/* ------------- */
+.menu-bar {
+  background-color: #fff;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.25s ease-in-out;
+}
+.menu-bar-2 {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.menu-bar-3 {
+  bottom: 0;
+}
+.menu-bar-4 {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(90deg);
+}
+.sub-menu.open .menu-bar-1 {
+  transform: translateY(10px) translateY(-50%) rotate(-45deg);
+}
+.sub-menu.open .menu-bar-2 {
+  opacity: 0;
+}
+.sub-menu.open .menu-bar-3 {
+  transform: translateY(-10px) translateY(50%) rotate(45deg);
+}
+.sub-menu.open .menu-bar-4 {
+  opacity: 0;
+}
+
+/* ------------- */
+.sub-menu-circle {
+  background-color: tomato;
+  position: absolute;
+  transform: scale(1);
+  z-index: 1000;
+  transition:
+      transform 0.3s ease-in-out,
+      width 0.3s ease-in-out,
+      height 0.3s ease-in-out;
+}
+.sub-menu.open .sub-menu-circle {
+  transform: scale(2);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ------------- */
+.sub-menu-overlay {
+  color: #333;
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sub-menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out;
+}
+.sub-menu-list {
+  margin-top: 6em;
+  margin-left: 6em;
+  list-style: none;
+}
+.sub-menu-list li {
+  margin: 1.5em;
+}
+.sub-menu-list li a {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  position: abusolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transition: all 0.1.25s ease;
+  text-decoration: none;
+}
+.sub-menu-list li a:hover {
+  border-bottom: 3px solid #fff;
+}
